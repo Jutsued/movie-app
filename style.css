@@ -5,50 +5,71 @@
 }
 
 body {
-    background-color: #22254b;
+    background-color: #1c1d23;
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
 header {
-    background-color: #373b69;
+    background-color: #141416;
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin: auto;
 }
 
 .search {
-    background-color: transparent;
-    border: 2px solid #22254b;
+    background-color: rgb(34, 34, 39);
+    border: 2px solid #0a116b;
     border-radius: 50px;
     color: #fff;
     font-family: inherit;
     font-size: 1rem;
     padding: 0.5rem 1rem;
+    transition: .4 ease-in;
+}
+
+.search:hover {
+    transform: scale(1.02);
 }
 
 .search::placeholder {
-    color: #7378c5;
+    color: rgb(195, 228, 50);
+    text-align: center;
 }
 
 .search:focus {
-    background-color: #22254b;
+    background-color: rgb(58, 58, 68);
     outline: none;
 }
 
 main {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    max-width: 100%;
 }
 
 .movie {
     background-color: #373b69;
     border-radius: 3px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 5px rgb(0 0 0 / 20%);
     overflow: hidden;
     position: relative;
-    margin: 1rem;
-    width: 300px;
+    margin: 1.2rem 1rem;
+    width: 350px;
+    border: 1px solid rgb(195, 228, 50);
+    border-radius: 50px;
+    transition: .5 ease-in;
+}
+
+.movie:hover {
+    transform: scale(1.09823456);
 }
 
 .movie img {
@@ -92,6 +113,7 @@ main {
     position: absolute;
     max-height: 100%;
     overflow: auto;
+    opacity: .8;
     left: 0;
     bottom: 0;
     right: 0;
@@ -101,6 +123,7 @@ main {
 
 .overview h3 {
     margin-top: 0;
+    color: green;
 }
 
 .movie:hover .overview {
